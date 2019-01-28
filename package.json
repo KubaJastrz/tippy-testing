@@ -1,0 +1,31 @@
+{
+  "name": "tippy-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "setup.js",
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "@tippy.js/react": "^1.1.1",
+    "jest": "^24.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0"
+  }
+}
